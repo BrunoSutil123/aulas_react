@@ -2,7 +2,7 @@
   /*para baixar o react routwer dom, precisamos ir no terminal e colocar npm i react-router-dom */
 
 
-import {BrowserRouter} from "react-router-dom"
+import {BrowserRouter} from "react-router-dom" /*mostrar pro navegador que dentro dele vai ter as rotas */
 
 import Router from "./router"
 
@@ -11,7 +11,7 @@ function App() {
   return (
     <BrowserRouter>
       <Router />
-  </BrowserRouter>
+    </BrowserRouter>
   )
 }
 
