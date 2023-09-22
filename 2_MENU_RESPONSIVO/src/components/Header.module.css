@@ -1,3 +1,26 @@
+
+.desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #aaa;
+
+}
+
+
+.mobile{
+    position: relative;
+}
+
+
+.desktop_options{
+    display: flex;
+    gap: 2rem;
+}
+
+
+
 .menu_logo{
     border: 1px solid #aaa;
     display: flex;
@@ -5,23 +28,44 @@
     height: 4rem;
     align-items: center;
     padding-inline: 1rem;
+    margin-bottom: 1rem;
 }
 
-.opcoes{
+.options{
     border: 1px solid #ccc;
     width: 10rem;
     padding-block: 1rem;
+    position: absolute; /*deixar o texto até o topo*/
+    background-color: white;
+    top: 4rem;
 
-    translate: -100%;
+    translate: -100%; /*faz o menu desaparece, e se for 0 faz aparecer*/
+
+    transition: translate .3s;
 }
 
-.opcoes nav{
+.options nav{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
 
-.opcoes.open{
+.options.open{
     translate: 0;
+}
+
+
+
+
+
+
+@media (min-width: 800px){
+    .mobile{
+        display: none;
+    }
+
+    .desktop {
+        display: flex;
+    }
 }
